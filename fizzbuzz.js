@@ -1,8 +1,15 @@
 class FizzBuzz {
   static say(number) {
-    return 1;
+    if (number % 3 === 0) {
+      return "fizz";
+    } else if (number % 5 == 0) {
+      return "buzz";
+    } else if (number % 3 == 0 && number % 5 == 0) {
+      return "fizzbuzz";
+    } else return "number";
   }
 }
+
 module.exports = FizzBuzz;
 
 // for (number = 1; number < 1000; number++) {
